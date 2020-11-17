@@ -1,0 +1,16 @@
+PODS:
+  - ZJCFramework (0.1.0)
+
+DEPENDENCIES:
+  - ZJCFramework (from `../`)
+
+EXTERNAL SOURCES:
+  ZJCFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZJCFramework: da0bca16fefb08593d08f8fad7a9588a21f48435
+
+PODFILE CHECKSUM: 06fb68ceb5455f0ac27afb602c99bc2cb770739c
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,22 @@
+{
+  "name": "ZJCFramework",
+  "version": "0.1.0",
+  "summary": "A short description of ZJCFramework.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dbk1985/ZJCFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dbk1985": "376958755@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/dbk1985/ZJCFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZJCFramework/Classes/**/*"
+}
