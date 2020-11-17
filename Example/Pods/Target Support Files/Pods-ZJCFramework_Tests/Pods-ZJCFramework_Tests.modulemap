@@ -1,0 +1,6 @@
+framework module Pods_ZJCFramework_Tests {
+  umbrella header "Pods-ZJCFramework_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
