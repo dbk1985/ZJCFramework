@@ -4,7 +4,6 @@ platform :ios, '8.0'
 
 target 'ZJCFramework_Example' do
   pod 'ZJCFramework', :path => '../'
-
   target 'ZJCFramework_Tests' do
     inherit! :search_paths
 

@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CF149FCE45AC765584159EC7 /* Pods_ZJCFramework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4C69E710AE621F3DE95B82 /* Pods_ZJCFramework_Tests.framework */; };
+		E783FD952563AB040008C3CD /* ZJNetWorkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E783FD932563AB040008C3CD /* ZJNetWorkingController.m */; };
+		E783FD9A2563AB0D0008C3CD /* ZJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E783FD982563AB0D0008C3CD /* ZJTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		87E3E6EDFD3D30F77BC754B6 /* Pods-ZJCFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJCFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZJCFramework_Tests/Pods-ZJCFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A6AAAEC6C9DE978C76B171F6 /* Pods-ZJCFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJCFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZJCFramework_Tests/Pods-ZJCFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B57D9BB13AE6458630675FE9 /* Pods-ZJCFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJCFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZJCFramework_Example/Pods-ZJCFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E783FD932563AB040008C3CD /* ZJNetWorkingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNetWorkingController.m; sourceTree = "<group>"; };
+		E783FD942563AB040008C3CD /* ZJNetWorkingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNetWorkingController.h; sourceTree = "<group>"; };
+		E783FD982563AB0D0008C3CD /* ZJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTableViewController.m; sourceTree = "<group>"; };
+		E783FD992563AB0D0008C3CD /* ZJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 		6003F593195388D20070C39A /* Example for ZJCFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E783FD992563AB0D0008C3CD /* ZJTableViewController.h */,
+				E783FD982563AB0D0008C3CD /* ZJTableViewController.m */,
+				E783FD922563AB040008C3CD /* NetWorking */,
 				6003F59C195388D20070C39A /* ZJAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +203,15 @@
 				7E86BAA00468BC1FDD2B7621 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E783FD922563AB040008C3CD /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				E783FD932563AB040008C3CD /* ZJNetWorkingController.m */,
+				E783FD942563AB040008C3CD /* ZJNetWorkingController.h */,
+			);
+			path = NetWorking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +320,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZJCFramework_Example/Pods-ZJCFramework_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/ZJCFramework/ZJCFramework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJCFramework.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +389,8 @@
 				6003F59E195388D20070C39A /* ZJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				E783FD952563AB040008C3CD /* ZJNetWorkingController.m in Sources */,
+				E783FD9A2563AB0D0008C3CD /* ZJTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

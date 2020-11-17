@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "ZJNetworking.h"
+#import "ZJFramework.h"
 
 FOUNDATION_EXPORT double ZJCFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZJCFrameworkVersionString[];
